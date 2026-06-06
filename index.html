@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Carl Macapayad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" id="logo-initial">KC<span id="logo-lastname">Macapayad</span></a>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+
+        <nav>
+            <a href="index.html" class="activate">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>    
+            <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>            
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Kim Carl Macapayad</span></h1>
+            <h3 class="typing-text">I'm a <span>Computer Engineer</span></h3>
+            <a href="#" class="btn">Contact Me</a>
+        </div>
+    </section>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        if (menuToggle && nav) {
+            menuToggle.addEventListener('click', () => {
+                nav.classList.toggle('show-menu');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-xmark');
+            });
+
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => nav.classList.remove('show-menu'));
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://googleapis.com');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 100%;
+    font-size: 75%;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #f1f2e4;
+    color: #4B0082;
+}
+
+header{
+    margin-top: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 10%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 800;   
+    cursor: pointer;
+    transition: 0.5s ease; 
+}
+
+#logo-initial{
+    font-family: 'Montserrat', sans-serif;
+    color: #4B0082;
+}
+
+#logo-lastname{
+    font-family: 'Montserrat', sans-serif;
+    color: #757575;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 2rem;
+    color: #4B0082;
+    cursor: pointer;
+    z-index: 200;
+}
+
+nav a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4B0082;
+    margin-left: 20px;
+    transition: 0.4s ease;
+}
+
+nav a:hover,
+nav a:active,
+nav a.activate{
+    color: #757575;
+    border-bottom: 3px solid #4B0082;
+}
+
+@media(max-width:995px){
+    header{
+        padding: 1rem 5%;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        display: none;
+        top: 100%;
+        right: 1rem;
+        width: 40%;
+        border-left: 3px solid #4B0082;
+        border-bottom: 3px solid #4B0082;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem;
+        background-color: #f1f2e4;
+        border-top: 3px solid #4B0082;
+        border-right: 3px solid #4B0082;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        box-shadow: 0 2px #4B0082;
+    }
+
+    nav.show-menu{
+        display: flex;
+    }
+
+    nav a{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    nav.activate{
+        display: flex;
+    }
+
+    nav a:hover,
+    nav a:active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.25rem solid #4B0082;
+        
+    }
+
+
+}
+
+section{
+    min-height: calc(100vh - 8rem);
+    padding: 3rem 10% 2rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+
+
