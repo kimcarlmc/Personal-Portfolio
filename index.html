@@ -10,26 +10,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo" id="logo-initial">KC<span id="logo-lastname">Macapayad</span></a>
-        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    <header class="reveal-item" style="--delay: 0.05s;">
+        <a href="#" class="logo reveal-item" id="logo-initial" style="--delay: 0.10s;">KC<span id="logo-lastname">Macapayad</span></a>
+        <div class="menu-toggle reveal-item" style="--delay: 0.15s;"><i class="fa-solid fa-bars"></i></div>
 
         <nav>
-            <a href="index.html" class="activate">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="project.html">Projects</a>
-            <a href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>    
-            <a href="https://github.com/kimcarlmc" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>            
+            <a href="index.html" class="activate reveal-item" style="--delay: 0.20s;">Home</a>
+            <a href="about.html" class="reveal-item" style="--delay: 0.25s;">About Me</a>
+            <a href="project.html" class="reveal-item" style="--delay: 0.30s;">Projects</a>
+            <a href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/" class="social-icon reveal-item" style="--delay: 0.35s;" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/kimcarlmc" class="social-icon reveal-item" style="--delay: 0.40s;" target="_blank"><i class="fa-brands fa-github"></i></a>
         </nav>
     </header>
     <section class="home">
-        <div class="home-img">
+        <div class="home-img reveal-item" style="--delay: 0.10s;">
             <img src="Images/main.png" alt="Profile Picture">
         </div>
-        <div class="home-content">
-            <h3>Hi, I'm <span>Kim Carl Macapayad</span></h3>
-            <h1 class="typing-text">Computer<span> Engineer</span></h1>
-            <div class="home-buttons">
+        <div class="home-content reveal-item" style="--delay: 0.25s;">
+            <h3 class="reveal-item" style="--delay: 0.35s;">Hi, I'm <span>Kim Carl Macapayad</span></h3>
+            <h1 class="typing-text reveal-item" style="--delay: 0.45s;">Computer<span> Engineer</span></h1>
+            <div class="home-buttons reveal-item" style="--delay: 0.55s;">
                 <a href="mailto:kimcarlmc@gmail.com" class="btn"><i class="fa-regular fa-envelope"></i> kimcarlmc@gmail.com</a>
                 <a href="Files/KCMacapayad_Resume.pdf" class="btn" download><i class="fa-solid fa-download"></i> Download CV</a>
             </div>
@@ -50,6 +50,23 @@
             nav.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => nav.classList.remove('show-menu'));
             });
+        }
+
+        const revealItems = document.querySelectorAll('.reveal-item');
+
+        if ('IntersectionObserver' in window && revealItems.length) {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add('is-visible'));
         }
     </script>
 </body>

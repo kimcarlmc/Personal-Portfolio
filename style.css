@@ -45,6 +45,8 @@ header{
     font-weight: 800;   
     cursor: pointer;
     transition: 0.5s ease; 
+    animation: fadeInUp 1s ease;
+    animation-duration: 1s;
 }
 
 #logo-initial{
@@ -147,6 +149,18 @@ section{
     padding: 3rem 10% 2rem;
 }
 
+.reveal-item{
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition-delay: var(--delay, 0s);
+}
+
+.reveal-item.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .home{
     display: flex;
     flex-direction: column;
@@ -223,6 +237,7 @@ section{
     font-weight: 500;
     border-radius: 1rem;
     transition: 0.4s ease;
+    box-shadow: 0 2px 2px rgba(75, 0, 130, 0.3);
 }
 
 .home-content .btn:hover{
@@ -231,4 +246,14 @@ section{
     transform: scale(1.05);
 }
 
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
