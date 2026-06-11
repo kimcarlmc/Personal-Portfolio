@@ -1,5 +1,7 @@
 # Personal Portfolio
 
+![Portfolio Home Screenshot](Images/portfolio-home.png)
+
 Welcome to my personal portfolio website! This project showcases my educational background, professional experience, technical skills, and career journey as a graduating Computer Engineering student.
 
 Live Website: https://kcmacapayad-portfolio.vercel.app
@@ -28,9 +30,15 @@ This portfolio serves as my online professional profile, providing visitors with
 ## Navigation
 
 ### Home
+
+![Portfolio About Screenshot](Images/portfolio-about.png)
+
 The landing page containing a brief introduction and overview of my professional profile.
 
 ### Background
+
+![Portfolio Background Screenshot](Images/portfolio-background.png)
+
 A dedicated section that includes:
 
 #### Education
@@ -75,6 +83,8 @@ A work-in-progress section that will feature academic, personal, and professiona
 ---
 
 ## Project Status
+
+![Portfolio Projects Screenshot](Images/portfolio-projects.png)
 
 Currently under development.
 
