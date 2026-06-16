@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Kim Carl Macapayad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="Images/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo" id="logo-initial">KC<span id="logo-lastname">Macapayad</span></a>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="background.html">Background</a>
+            <a href="project.html" class="activate">Projects</a>
+            <a href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/kimcarlmc" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </nav>
+    </header>
+
+    <button class="go-back-btn" aria-label="Go back"><i class="fa-solid fa-arrow-left"></i></button>
+
+    <section class="project-detail-section">
+        <div class="project-intro reveal-item" style="--delay: 0.45s;">
+            <div class="project-intro-copy">
+                <h2>Project Introduction</h2>
+                <p>The Design and Implementation of a Mud Crab Gender Classification and Counting System is an undergraduate thesis project developed to automate the identification and counting of mud crabs using machine learning technology. The system aims to assist aquaculture farmers and researchers by providing a faster, more accurate, and efficient alternative to manual mud crab classification.</p>
+            </div>
+            <div class="project-intro-image">
+                <img src="Images/Prototype.png" alt="Thesis Project 3D Model">
+            </div>
+        </div>
+
+        <div class="project-about reveal-item" style="--delay: 0.50s;">
+            <h2>About the Project</h2>
+            <p>This project utilizes image processing and machine learning techniques to detect mud crabs, determine their gender, and automatically count the total number present in an image or camera feed. The system was developed using Python and integrated with a trained classification model capable of distinguishing male and female mud crabs based on their abdominal flap.</p>
+            <h3>Key Features</h3>
+            <ul class="feature-list">
+                <li><strong>Automated mud crab detection and counting</strong></li>
+                <li><strong>Gender classification (Male/Female)</strong></li>
+                <li><strong>Real-time image processing capability</strong></li>
+                <li><strong>User-friendly graphical interface</strong></li>
+                <li><strong>Improved accuracy and efficiency compared to manual counting methods</strong></li>
+            </ul>
+            <h3>Technologies Used</h3>
+            <ul class="feature-list">
+                <li><strong>Python</strong></li>
+                <li><strong>OpenCV</strong></li>
+                <li><strong>Machine Learning</strong></li>
+                <li><strong>YOLO Object Detection (YOLOv11)</strong></li>
+                <li><strong>Tkinter GUI</strong></li>
+                <li><strong>Raspberry Pi Camera Module</strong></li>
+            </ul>
+        </div>
+
+        <div class="project-steps reveal-item" style="--delay: 0.55s;">
+            <h2>Step-by-Step Process</h2>
+            <div class="project-cards">
+                <div class="content-card">
+                    <h3>1. Collection of Data</h3>
+                    <p>Collect a diverse dataset of images containing mud crabs in various environments and lighting conditions.</p>
+                </div>
+                <div class="content-card">
+                    <h3>2. Annotation of Data</h3>
+                    <p>Label the collected images with polygon tool around the abdominal flaps of the mud crabs and their corresponding labels.</p>
+                </div>
+                <div class="content-card">
+                    <h3>3. Machine Learning Model Training (YOLOv11)</h3>
+                    <p>Train the YOLOv11 model on the annotated dataset to enable accurate detection and classification of mud crabs.</p>
+                </div>
+                <div class="content-card">
+                    <h3>4. Implement Model to the Python Application</h3>
+                    <p>Integrate the trained YOLOv11 model into a Python application, ensuring seamless functionality and user-friendly interface.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-screenshots reveal-item" style="--delay: 0.60s;">
+            <h2>Screenshots</h2>
+            <div class="screenshot-carousel">
+                <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous screenshot">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="screenshot-viewport">
+                    <div class="screenshot-card active">
+                        <img src="Images/Thesis-Application.jpg" alt="Python Application Screenshot">
+                        <button class="fullscreen-btn" type="button" aria-label="View screenshot full screen">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="Images/Dataset.png" alt="Dataset Screenshot">
+                        <button class="fullscreen-btn" type="button" aria-label="View screenshot full screen">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="Images/Annotation.png" alt="Annotation Screenshot">
+                        <button class="fullscreen-btn" type="button" aria-label="View screenshot full screen">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="Images/Sample-Result.jpg" alt="Sample Result Screenshot">
+                        <button class="fullscreen-btn" type="button" aria-label="View screenshot full screen">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="carousel-arrow carousel-next" type="button" aria-label="Next screenshot">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="project-results reveal-item" style="--delay: 0.65s;">
+            <h2>Results</h2>
+            <p>The developed system successfully identified and counted mud crabs while accurately classifying their gender. Testing demonstrated that the system could process images efficiently and reduce the time required for manual classification. The project highlights the potential application of artificial intelligence and computer vision in modern aquaculture management and monitoring.</p>
+        </div>
+
+        <div class="project-repo reveal-item" style="--delay: 0.70s;">
+            <h2>GitHub Repository</h2>
+            <p>This repository contains the source code for the Mud Crab Gender Classification and Counting System. It serves as the primary source for project development, version control, and future enhancements.</p>
+            <a href="https://github.com/kimcarlmc/Undergraduate-Thesis" target="_blank" class="btn">View Repository</a>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        if (menuToggle && nav) {
+            menuToggle.addEventListener('click', () => {
+                nav.classList.toggle('show-menu');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-xmark');
+            });
+
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => nav.classList.remove('show-menu'));
+            });
+        }
+
+        const revealItems = document.querySelectorAll('.reveal-item');
+
+        if ('IntersectionObserver' in window && revealItems.length) {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add('is-visible'));
+        }
+
+        const cards = document.querySelectorAll('.screenshot-card');
+        const prevButton = document.querySelector('.carousel-prev');
+        const nextButton = document.querySelector('.carousel-next');
+        let currentIndex = 0;
+
+        function updateScreenshotCarousel(index) {
+            cards.forEach((card, i) => {
+                card.classList.toggle('active', i === index);
+            });
+        }
+
+      
+        const overlay = document.createElement('div');
+        overlay.className = 'img-overlay';
+        overlay.innerHTML = '<button class="overlay-close" aria-label="Close">&times;</button><button class="overlay-nav overlay-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button><img src="" alt="Screenshot full"><button class="overlay-nav overlay-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>';
+        document.body.appendChild(overlay);
+        let overlayCurrentIndex = 0;
+        const overlayImg = overlay.querySelector('img');
+        const overlayClose = overlay.querySelector('.overlay-close');
+
+        function closeOverlay() {
+            overlay.classList.remove('visible');
+            overlayImg.src = '';
+            document.querySelector('.go-back-btn')?.classList.remove('hidden');
+        }
+
+        function showImageInOverlay(index) {
+            overlayCurrentIndex = index;
+            if (index >= 0 && index < cards.length) {
+                const img = cards[index].querySelector('img');
+                if (img) {
+                    overlayImg.src = img.src;
+                    overlay.classList.add('visible');
+                    document.querySelector('.go-back-btn')?.classList.add('hidden');
+                }
+            }
+        }
+
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                closeOverlay();
+            }
+        });
+        overlayClose.addEventListener('click', () => {
+            closeOverlay();
+        });
+
+        const overlayPrev = overlay.querySelector('.overlay-prev');
+        const overlayNext = overlay.querySelector('.overlay-next');
+
+        if (overlayPrev) {
+            overlayPrev.addEventListener('click', () => {
+                overlayCurrentIndex = (overlayCurrentIndex - 1 + cards.length) % cards.length;
+                showImageInOverlay(overlayCurrentIndex);
+            });
+        }
+
+        if (overlayNext) {
+            overlayNext.addEventListener('click', () => {
+                overlayCurrentIndex = (overlayCurrentIndex + 1) % cards.length;
+                showImageInOverlay(overlayCurrentIndex);
+            });
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (overlay.classList.contains('visible')) {
+                if (e.key === 'Escape') {
+                    closeOverlay();
+                } else if (e.key === 'ArrowLeft') {
+                    overlayCurrentIndex = (overlayCurrentIndex - 1 + cards.length) % cards.length;
+                    showImageInOverlay(overlayCurrentIndex);
+                } else if (e.key === 'ArrowRight') {
+                    overlayCurrentIndex = (overlayCurrentIndex + 1) % cards.length;
+                    showImageInOverlay(overlayCurrentIndex);
+                }
+            }
+        });
+
+        if (prevButton && nextButton && cards.length) {
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+                updateScreenshotCarousel(currentIndex);
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % cards.length;
+                updateScreenshotCarousel(currentIndex);
+            });
+
+            cards.forEach((card, idx) => {
+                const fullscreenBtn = card.querySelector('.fullscreen-btn');
+                const imgEl = card.querySelector('img');
+
+                if (imgEl) {
+                    imgEl.style.cursor = 'zoom-in';
+                    imgEl.addEventListener('click', () => {
+                        showImageInOverlay(idx);
+                    });
+                }
+
+                if (fullscreenBtn) {
+                    fullscreenBtn.addEventListener('click', () => {
+                        showImageInOverlay(idx);
+                    });
+                }
+            });
+        }
+
+        // Go back button behavior: prefer history.back(), fallback to projects page
+        const goBackBtn = document.querySelector('.go-back-btn');
+        if (goBackBtn) {
+            goBackBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (document.referrer && document.referrer !== '') {
+                    history.back();
+                } else {
+                    window.location.href = 'project.html';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
