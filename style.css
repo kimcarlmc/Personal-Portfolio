@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://googleapis.com');
 
 * {
     margin: 0;
@@ -367,8 +366,473 @@ section{
 }
 
 .content-card:hover{
-   box-shadow: 0 4px 12px rgba(75, 0, 130, 0.25);
-   transform: translateY(-2px);
+   box-shadow: 0 6px 18px rgba(75, 0, 130, 0.22);
+   transform: translateY(-4px);
+}
+
+.projects-section{
+    padding-top: 1rem;
+}
+
+.section-header{
+    max-width: 760px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    color: #4B0082;
+}
+
+.section-header h2{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p{
+    font-size: 1rem;
+    color: #757575;
+    line-height: 1.7;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card h3{
+    font-size: 1.5rem;
+    color: #4B0082;
+}
+
+.project-card p{
+    color: #4B0082;
+    line-height: 1.6;
+    font-size: 0.97rem;
+}
+
+.project-image{
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    min-height: 180px;
+    background: #f1f2e4;
+}
+
+.project-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-detail-section{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 10% 3rem;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section.project-detail-section{
+    min-height: auto;
+}
+
+.project-intro{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.project-intro-copy h2,
+.project-about h2,
+.project-steps h2,
+.project-screenshots h2,
+.project-results h2,
+.project-repo h2{
+    color: #4B0082;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0;
+}
+
+.project-intro-copy p,
+.project-about p,
+.project-results p,
+.project-repo p{
+    color: #4B0082;
+    line-height: 1.75;
+    max-width: 760px;
+}
+
+.project-intro-image{
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(75, 0, 130, 0.12);
+}
+
+.project-intro-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-about,
+.project-results,
+.project-repo{
+    background: #f1f2e4;
+    border: 1px solid #4B0082;
+    border-radius: 1rem;
+    padding: 1.75rem;
+}
+
+.project-about h3,
+.project-steps h2,
+.project-screenshots h2{
+    margin-top: 1.5rem;
+}
+
+.feature-list{
+    list-style: disc inside;
+    margin-top: 1.2rem;
+    color: #4B0082;
+    padding-left: 1.2rem;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.feature-list li{
+    line-height: 1.8;
+    break-inside: avoid-column;
+    margin-bottom: 0.75rem;
+}
+
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.project-screenshots{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.screenshot-carousel{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.carousel-arrow{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(75, 0, 130, 0.1);
+    color: #4B0082;
+    border: 1px solid rgba(75, 0, 130, 0.18);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-arrow:hover{
+    background: rgba(75, 0, 130, 0.18);
+    transform: scale(1.05);
+}
+
+.screenshot-viewport{
+    width: 100%;
+    height: 480px;
+    display: grid;
+    position: relative;
+}
+
+.screenshot-card{
+    display: none;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(75, 0, 130, 0.12);
+    background: #fff;
+    height: 100%;
+}
+
+.screenshot-card.active{
+    display: block;
+}
+
+.screenshot-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.screenshot-card:hover img{
+    transform: scale(1.02);
+}
+
+.fullscreen-btn{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(75, 0, 130, 0.9);
+    color: #f1f2e4;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(241, 242, 228, 0.4);
+}
+
+.screenshot-card:hover .fullscreen-btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* in-page fullscreen overlay */
+.img-overlay{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.img-overlay.visible{
+    opacity: 1;
+    visibility: visible;
+}
+.img-overlay img{
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+.overlay-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.overlay-nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(75, 0, 130, 0.5);
+    color: #f1f2e4;
+    border: 1px solid rgba(241, 242, 228, 0.3);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.overlay-nav:hover{
+    background: rgba(75, 0, 130, 0.8);
+    transform: scale(1.05);
+}
+
+.overlay-prev{
+    bottom: 50%;
+    left: 2rem;
+    transform: translateY(50%);
+}
+
+.overlay-next{
+    bottom: 50%;
+    right: 2rem;
+    transform: translateY(50%);
+}
+
+.img-overlay.visible ~ .go-back-btn,
+.go-back-btn.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Sticky go back button */
+.go-back-btn{
+    position: fixed;
+    /* place below the header to avoid overlap */
+    top: 4rem;
+    left: 10%;
+    transform: translateX(0);
+    z-index: 12000;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffffcc;
+    color: #4B0082;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    border: 1px solid rgba(75,0,130,0.12);
+    box-shadow: 0 6px 18px rgba(75,0,130,0.08);
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.go-back-btn:hover{
+    background: #4B0082;
+    color: #f1f2e4;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 995px){
+    .go-back-btn{ left: 5%; top: 3.6rem; width: 2.4rem; height: 2.4rem; }
+}
+
+@media (max-width: 600px){
+    .go-back-btn{
+        top: 3.4rem;
+        left: 4%;
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 901px){
+    .carousel-arrow{
+        display: flex;
+    }
+
+    .screenshot-viewport{
+        height: 480px;
+    }
+}
+
+@media (max-width: 900px){
+    .screenshot-carousel{
+        display: block;
+    }
+
+    .screenshot-viewport{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .screenshot-card{
+        display: block;
+    }
+
+    .carousel-arrow{
+        display: none;
+    }
+}
+
+.project-repo .btn{
+    margin-top: 1rem;
+}
+
+@media (max-width: 1100px){
+    .project-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .project-detail-section{
+        padding: 2rem 5% 3rem;
+    }
+
+    .project-intro{
+        grid-template-columns: 1fr;
+    }
+
+    .project-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .feature-list{
+        column-count: 1;
+    }
+
+    .screenshot-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px){
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .project-detail-section{
+        padding: 1.5rem 4% 2rem;
+    }
+
+    .project-intro{
+        gap: 1.5rem;
+    }
+
+    .project-intro-image img{
+        height: auto;
+    }
+
+    .feature-list{
+        column-count: 1;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 560px){
+    .home-content h1,
+    .section-header h2,
+    .project-intro-copy h2,
+    .project-about h2,
+    .project-steps h2,
+    .project-screenshots h2,
+    .project-results h2,
+    .project-repo h2{
+        font-size: 1.8rem;
+    }
+
+    .home-content h3,
+    .project-card h3,
+    .project-intro-copy p,
+    .project-about p,
+    .project-results p,
+    .project-repo p{
+        font-size: 0.95rem;
+    }
 }
 
 .card-header{
