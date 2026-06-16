@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Showcase | Kim Carl Macapayad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="Images/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo" id="logo-initial">KC<span id="logo-lastname">Macapayad</span></a>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="background.html">Background</a>
+            <a href="project.html" class="activate">Projects</a>
+            <a href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/kimcarlmc" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content reveal-item" style="--delay: 0.10s;">
+            <h3 class="reveal-item" style="--delay: 0.20s;">Profile Showcase</h3>
+            <h1 class="typing-text reveal-item" style="--delay: 0.30s;">Team & Skills</h1>
+            <p class="reveal-item" style="--delay: 0.35s;">A profile showcase layout designed with consistent colors, typography, and a focus on clean readability.</p>
+            <div class="home-buttons reveal-item" style="--delay: 0.40s;">
+                <a href="project.html" class="btn"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+                <a href="index.html" class="btn"><i class="fa-solid fa-house"></i> Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        if (menuToggle && nav) {
+            menuToggle.addEventListener('click', () => {
+                nav.classList.toggle('show-menu');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-xmark');
+            });
+
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => nav.classList.remove('show-menu'));
+            });
+        }
+
+        const revealItems = document.querySelectorAll('.reveal-item');
+
+        if ('IntersectionObserver' in window && revealItems.length) {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add('is-visible'));
+        }
+    </script>
+</body>
+</html>
