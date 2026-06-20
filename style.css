@@ -365,13 +365,33 @@ section{
     cursor: pointer;
 }
 
+.content-card h3{
+    padding-bottom: 1rem;
+}
+
 .content-card:hover{
    box-shadow: 0 6px 18px rgba(75, 0, 130, 0.22);
    transform: translateY(-4px);
 }
 
+
+
 .projects-section{
     padding-top: 1rem;
+    text-align: justify;
+}
+
+.projects-section h3{
+    text-align: center;
+}
+
+.projects-section p{
+    text-indent: 2em;
+}
+
+.projects-section p span{
+    font-style: italic;
+    font-weight: 600;
 }
 
 .section-header{
@@ -442,6 +462,11 @@ section{
     gap: 2rem;
 }
 
+.project-detail-section p{
+    text-align: justify;
+    text-indent: 2rem;
+}
+
 section.project-detail-section{
     min-height: auto;
 }
@@ -472,6 +497,11 @@ section.project-detail-section{
     color: #4B0082;
     line-height: 1.75;
     max-width: 760px;
+}
+
+.project-intro-copy span{
+    font-style: italic;
+    font-weight: 600;
 }
 
 .project-intro-image{
