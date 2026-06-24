@@ -84,7 +84,7 @@ A work-in-progress section that will feature academic, personal, and professiona
 
 ## Project Status
 
-![Portfolio Projects Screenshot](Images/portfolio-projects.png)
+![Portfolio Projects Screenshot](Images/projects-menu.png)
 
 Currently under development.
 
