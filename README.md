@@ -86,7 +86,7 @@ A work-in-progress section that will feature academic, personal, and professiona
 
 ![Portfolio Projects Screenshot](Images/projects-menu.png)
 
-Currently under development.
+Showcases the projects that I have made.
 
 The portfolio is continuously being updated with new projects, experiences, and improvements.
 
