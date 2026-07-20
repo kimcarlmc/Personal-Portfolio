@@ -1,99 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="YmgyyyB20z_RQ7CyXgZOEnYOZdBcjvVOuKX-DC1jSiY" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Kim Carl, a front-end developer building responsive websites using HTML, CSS, and JavaScript.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="google-site-verification"
+      content="YmgyyyB20z_RQ7CyXgZOEnYOZdBcjvVOuKX-DC1jSiY"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Kim Carl, a front-end developer building responsive websites using HTML, CSS, and JavaScript."
+    />
     <title>Kim Carl Macapayad | Front-End Developer Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/jpg" href="Images/favicon.jpg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="https://kcmacapayad-portfolio.vercel.app/">
-</head>
-<body>
-    <header class="home-header-animate" style="--delay: 0.05s;">
-        <a href="#" class="logo home-header-animate" id="logo-initial" style="--delay: 0.10s;">KC<span id="logo-lastname">Macapayad</span></a>
-        <div class="menu-toggle home-header-animate" style="--delay: 0.15s;"><i class="fa-solid fa-bars"></i></div>
 
-        <nav>
-            <a href="index.html" class="activate home-header-animate" style="--delay: 0.20s;">Home</a>
-            <a href="background.html" class="home-header-animate" style="--delay: 0.25s;">Background</a>
-            <a href="project.html" class="home-header-animate" style="--delay: 0.30s;">Projects</a>
-            <a href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/" class="social-icon home-header-animate" style="--delay: 0.35s;" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/kimcarlmc" class="social-icon home-header-animate" style="--delay: 0.40s;" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </nav>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://kcmacapayad-portfolio.vercel.app/"
+    />
+    <meta
+      property="og:title"
+      content="Kim Carl Macapayad | Front-End Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Kim Carl, a front-end developer building responsive websites using HTML, CSS, and JavaScript."
+    />
+    <meta
+      property="og:image"
+      content="https://kcmacapayad-portfolio.vercel.app/Images/og-image.png"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Kim Carl Macapayad | Front-End Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Kim Carl, a front-end developer building responsive websites using HTML, CSS, and JavaScript."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kcmacapayad-portfolio.vercel.app/Images/og-image.png"
+    />
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kim Carl Macapayad",
+        "url": "https://kcmacapayad-portfolio.vercel.app/",
+        "image": "https://kcmacapayad-portfolio.vercel.app/Images/og-image.png",
+        "jobTitle": "Computer Engineer",
+        "description": "Front-end developer building responsive websites using HTML, CSS, and JavaScript.",
+        "email": "mailto:kimcarlmc@gmail.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/",
+          "https://github.com/kimcarlmc"
+        ]
+      }
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/jpg" href="Images/favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="canonical" href="https://kcmacapayad-portfolio.vercel.app/" />
+  </head>
+  <body>
+    <header class="home-header-animate" style="--delay: 0.05s">
+      <a
+        href="#"
+        class="logo home-header-animate"
+        id="logo-initial"
+        style="--delay: 0.1s"
+        >KC<span id="logo-lastname">Macapayad</span></a
+      >
+      <div class="menu-toggle home-header-animate" style="--delay: 0.15s">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <nav>
+        <a
+          href="index.html"
+          class="activate home-header-animate"
+          style="--delay: 0.2s"
+          >Home</a
+        >
+        <a
+          href="background.html"
+          class="home-header-animate"
+          style="--delay: 0.25s"
+          >Background</a
+        >
+        <a href="project.html" class="home-header-animate" style="--delay: 0.3s"
+          >Projects</a
+        >
+        <a
+          href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/"
+          class="social-icon home-header-animate"
+          style="--delay: 0.35s"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/kimcarlmc"
+          class="social-icon home-header-animate"
+          style="--delay: 0.4s"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </nav>
     </header>
     <section class="home">
-        <div class="home-img reveal-item" style="--delay: 0.10s;">
-            <div class="image-card">
-                <img src="Images/main.png" alt="Profile Picture of Kim Carl Macapayad - Personal Portfolio Homepage" loading="lazy">
-                <div class="image-overlay">
-                    <span>About Me</span>
-                    <p>I'm a passionate Computer Engineer with a strong foundation in software development and problem-solving. I enjoy creating innovative solutions and continuously learning new technologies. I love learning through hands-on experience and collaborating with others to achieve common goals.</p>
-                </div>
-            </div>
+      <div class="home-img reveal-item" style="--delay: 0.1s">
+        <div class="image-card">
+          <img
+            src="Images/main.png"
+            alt="Profile Picture of Kim Carl Macapayad - Personal Portfolio Homepage"
+            loading="lazy"
+          />
+          <div class="image-overlay">
+            <span>About Me</span>
+            <p>
+              I'm a passionate Computer Engineer with a strong foundation in
+              software development and problem-solving. I enjoy creating
+              innovative solutions and continuously learning new technologies. I
+              love learning through hands-on experience and collaborating with
+              others to achieve common goals.
+            </p>
+          </div>
         </div>
-        <div class="home-content reveal-item" style="--delay: 0.25s;">
-            <h3 class="reveal-item" style="--delay: 0.35s;">Hi, I'm <span>Kim Carl Macapayad</span></h3>
-            <h1 class="typing-text reveal-item" style="--delay: 0.45s;">Computer<span> Engineer</span></h1>
-            <div class="home-buttons reveal-item" style="--delay: 0.55s;">
-                <a href="mailto:kimcarlmc@gmail.com" class="btn"><i class="fa-regular fa-envelope"></i> kimcarlmc@gmail.com</a>
-                <a href="Files/KCMacapayad_Resume.pdf" class="btn" download><i class="fa-solid fa-download"></i> Download CV</a>
-            </div>
+      </div>
+      <div class="home-content reveal-item" style="--delay: 0.25s">
+        <h3 class="reveal-item" style="--delay: 0.35s">
+          Hi, I'm <span>Kim Carl Macapayad</span>
+        </h3>
+        <h1 class="typing-text reveal-item" style="--delay: 0.45s">
+          Computer<span> Engineer</span>
+        </h1>
+        <div class="home-buttons reveal-item" style="--delay: 0.55s">
+          <a href="mailto:kimcarlmc@gmail.com" class="btn"
+            ><i class="fa-regular fa-envelope"></i> kimcarlmc@gmail.com</a
+          >
+          <a href="Files/KCMacapayad_Resume.pdf" class="btn" download
+            ><i class="fa-solid fa-download"></i> Download CV</a
+          >
         </div>
+      </div>
     </section>
     <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav');
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector("nav");
 
-        if (menuToggle && nav) {
-            menuToggle.addEventListener('click', () => {
-                nav.classList.toggle('show-menu');
-                const icon = menuToggle.querySelector('i');
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-xmark');
+      if (menuToggle && nav) {
+        menuToggle.addEventListener("click", () => {
+          nav.classList.toggle("show-menu");
+          const icon = menuToggle.querySelector("i");
+          icon.classList.toggle("fa-bars");
+          icon.classList.toggle("fa-xmark");
+        });
+
+        nav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () =>
+            nav.classList.remove("show-menu"),
+          );
+        });
+      }
+
+      const headerItems = document.querySelectorAll(".home-header-animate");
+      const alreadyAnimated =
+        sessionStorage.getItem("homeHeaderAnimated") === "true";
+
+      if (!alreadyAnimated) {
+        headerItems.forEach((item) => item.classList.add("is-animating"));
+
+        setTimeout(() => {
+          headerItems.forEach((item) => {
+            item.classList.remove("is-animating");
+            item.classList.add("is-visible");
+          });
+          sessionStorage.setItem("homeHeaderAnimated", "true");
+        }, 3200);
+      } else {
+        headerItems.forEach((item) => item.classList.add("is-visible"));
+      }
+
+      const revealItems = document.querySelectorAll(".reveal-item");
+
+      if ("IntersectionObserver" in window && revealItems.length) {
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                obs.unobserve(entry.target);
+              }
             });
+          },
+          { threshold: 0.15 },
+        );
 
-            nav.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => nav.classList.remove('show-menu'));
-            });
-        }
-
-        const headerItems = document.querySelectorAll('.home-header-animate');
-        const alreadyAnimated = sessionStorage.getItem('homeHeaderAnimated') === 'true';
-
-        if (!alreadyAnimated) {
-            headerItems.forEach(item => item.classList.add('is-animating'));
-
-            setTimeout(() => {
-                headerItems.forEach(item => {
-                    item.classList.remove('is-animating');
-                    item.classList.add('is-visible');
-                });
-                sessionStorage.setItem('homeHeaderAnimated', 'true');
-            }, 3200);
-        } else {
-            headerItems.forEach(item => item.classList.add('is-visible'));
-        }
-
-        const revealItems = document.querySelectorAll('.reveal-item');
-
-        if ('IntersectionObserver' in window && revealItems.length) {
-            const observer = new IntersectionObserver((entries, obs) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        obs.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.15 });
-
-            revealItems.forEach(item => observer.observe(item));
-        } else {
-            revealItems.forEach(item => item.classList.add('is-visible'));
-        }
+        revealItems.forEach((item) => observer.observe(item));
+      } else {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+      }
     </script>
-</body>
+  </body>
 </html>
