@@ -325,6 +325,47 @@ section{
     min-height: auto;
 }
 
+.page-title{
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #4B0082;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.intro-section{
+    padding-top: 1rem;
+}
+
+.intro-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.portrait-img{
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 4 / 5;
+    border-radius: 1rem;
+    object-fit: cover;
+    border: 1px solid #4B0082;
+    box-shadow: 0 4px 10px rgba(75, 0, 130, 0.15);
+}
+
+.intro-text p{
+    color: #4B0082;
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+@media (max-width: 900px){
+    .intro-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
 .background-page section{
     min-height: auto;
     padding-bottom: 1rem;
@@ -339,8 +380,7 @@ section{
     color: inherit;
 }
 
-.background-card h1,
-.skills-section h1{
+.background-card h1{
     font-size: 2.2rem;
     color: #4B0082;
     text-align: center;
@@ -368,8 +408,6 @@ section{
    transform: translateY(-4px);
 }
 
-
-
 .projects-section{
     padding-top: 1rem;
     text-align: justify;
@@ -395,9 +433,8 @@ section{
     color: #4B0082;
 }
 
-.section-header h2{
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.section-header h1{
+    font-size: 2.2rem;
 }
 
 .section-header p{
@@ -869,6 +906,10 @@ section.project-detail-section{
     .project-results p,
     .project-repo p{
         font-size: 0.95rem;
+    }
+
+    .page-title{
+        font-size: 2rem;
     }
 }
 
