@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="icon" type="image/jpg" href="Images/favicon.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <a href="index.html" class="logo" id="logo-initial">KC<span id="logo-lastname">Macapayad</span></a>
@@ -18,8 +20,10 @@
             <a href="index.html">Home</a>
             <a href="background.html" class="activate">Background</a>
             <a href="project.html">Projects</a>
-            <a href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/kimcarlmc" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/" class="social-icon" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/kimcarlmc" class="social-icon" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
         </nav>
     </header>
 
@@ -28,44 +32,53 @@
         <section class="intro-section reveal-item">
             <div class="intro-grid">
                 <img src="Images/Carousel/Pro.jpeg" alt="Kim Carl Macapayad portrait photo" class="portrait-img">
+                <div class="intro-column">
                     <div class="intro-text">
-                        <p>A Computer Engineering graduate with experience in web development and translation of mock-up design. Completed internship as Web Development Intern at iBuild.PH, where I gained practical experience in Drupal and SEO. Passionate about creating responsive website with HTML, CSS, Javascript, Git, Github, and Vercel. Contonuously expanding technical skills through personal projects with a strong commitment to learning and innovation.</p>
+                        <span class="intro-label">About Me</span>
+                        <p>A Computer Engineering graduate with experience in web development and translation of figma mock-up
+                            design. Completed internship as Web Development Intern at iBuild.PH, where I gained
+                            practical
+                            experience in Drupal and SEO. Passionate about creating responsive website with HTML, CSS,
+                            Javascript, Git, Github, and Vercel. Continuously expanding technical skills through
+                            personal
+                            projects with a strong commitment to learning and innovation.</p>
                     </div>
+
+                    <div class="background-grid">
+                        <a href="https://www.slsu.edu.ph/" class="background-card reveal-item" target="_blank">
+                            <h2>Education</h2>
+                            <div class="content-card">
+                                <div class="card-header">
+                                    <img src="Images/slsu.png" alt="SLSU Logo" class="education-logo">
+                                    <div class="card-text">
+                                        <h2>Southern Luzon State University</h2>
+                                        <p class="info-row">
+                                            <span>Bachelor of Science in Computer Engineering</span>
+                                            <strong class="info-year">2022-2026</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.ibuild.ph/" class="background-card reveal-item" target="_blank">
+                            <h2>Work Experience</h2>
+                            <div class="content-card">
+                                <div class="card-header">
+                                    <img src="Images/ibuild.png" alt="iBuild Logo" class="education-logo">
+                                    <div class="card-text">
+                                        <h2>Web Developer Intern (OJT)</h2>
+                                        <p class="info-row">
+                                            <span>iBuild.PH Web Services and Solutions</span>
+                                            <strong class="info-year">2025</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section class="background-grid">
-            <a href="https://www.slsu.edu.ph/" class="background-card reveal-item" target="_blank">
-                <h2>Education</h2>
-                <div class="content-card">
-                    <div class="card-header">
-                        <img src="Images/slsu.png" alt="SLSU Logo" class="education-logo">
-                        <div class="card-text">
-                            <h2>Southern Luzon State University</h2>
-                            <p class="info-row">
-                        <span>Bachelor of Science in Computer Engineering</span>
-                        <strong class="info-year">2022-2026</strong>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://www.ibuild.ph/" class="background-card reveal-item" target="_blank">
-                <h2>Work Experience</h2>
-                <div class="content-card">
-                    <div class="card-header">
-                        <img src="Images/ibuild.png" alt="iBuild Logo" class="education-logo">
-                        <div class="card-text">
-                            <h2>Web Developer Intern</h2>
-                            <p class="info-row">
-                        <span>iBuild.PH Web Services and Solutions</span>
-                        <strong class="info-year">2025</strong>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
         </section>
 
         <section class="skills-section reveal-item">
@@ -106,39 +119,40 @@
             </div>
         </section>
 
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav');
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
 
-        if (menuToggle && nav) {
-            menuToggle.addEventListener('click', () => {
-                nav.classList.toggle('show-menu');
-                const icon = menuToggle.querySelector('i');
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-xmark');
-            });
-
-            nav.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => nav.classList.remove('show-menu'));
-            });
-        }
-
-        const revealItems = document.querySelectorAll('.reveal-item');
-
-        if ('IntersectionObserver' in window && revealItems.length) {
-            const observer = new IntersectionObserver((entries, obs) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        obs.unobserve(entry.target);
-                    }
+            if (menuToggle && nav) {
+                menuToggle.addEventListener('click', () => {
+                    nav.classList.toggle('show-menu');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-xmark');
                 });
-            }, { threshold: 0.15 });
 
-            revealItems.forEach(item => observer.observe(item));
-        } else {
-            revealItems.forEach(item => item.classList.add('is-visible'));
-        }
-    </script>
+                nav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => nav.classList.remove('show-menu'));
+                });
+            }
+
+            const revealItems = document.querySelectorAll('.reveal-item');
+
+            if ('IntersectionObserver' in window && revealItems.length) {
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15 });
+
+                revealItems.forEach(item => observer.observe(item));
+            } else {
+                revealItems.forEach(item => item.classList.add('is-visible'));
+            }
+        </script>
 </body>
+
 </html>
