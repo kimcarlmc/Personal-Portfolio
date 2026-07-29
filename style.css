@@ -339,9 +339,9 @@ section{
 
 .intro-grid{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.6fr;
     gap: 2rem;
-    align-items: center;
+    align-items: start;
 }
 
 .portrait-img{
@@ -350,17 +350,53 @@ section{
     aspect-ratio: 4 / 5;
     border-radius: 1rem;
     object-fit: cover;
+    object-position: top;
     border: 1px solid #4B0082;
-    box-shadow: 0 4px 10px rgba(75, 0, 130, 0.15);
+    box-shadow: 0 10px 24px rgba(75, 0, 130, 0.28);
+}
+
+.intro-column{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.intro-label,
+.background-card > h2{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #757575;
+}
+
+.intro-label::after,
+.background-card > h2::after{
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    margin-top: 0.6rem;
+    margin-bottom: 0.75rem;
+    background: #4B0082;
+    border-radius: 2px;
 }
 
 .intro-text p{
     color: #4B0082;
-    font-size: 1.7rem;
-    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
-@media (max-width: 900px){
+.background-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (max-width: 700px){
     .intro-grid{
         grid-template-columns: 1fr;
     }
@@ -372,18 +408,11 @@ section{
 }
 
 .background-card{
-    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     text-decoration: none;
     color: inherit;
-}
-
-.background-card h1{
-    font-size: 2.2rem;
-    color: #4B0082;
-    text-align: center;
 }
 
 .content-card{
@@ -413,7 +442,7 @@ section{
     text-align: justify;
 }
 
-.projects-section h3{
+.projects-section h2{
     text-align: center;
 }
 
@@ -431,10 +460,6 @@ section{
     margin: 0 auto 2rem;
     text-align: center;
     color: #4B0082;
-}
-
-.section-header h1{
-    font-size: 2.2rem;
 }
 
 .section-header p{
@@ -473,6 +498,7 @@ section{
 .project-card h3{
     font-size: 1.5rem;
     color: #4B0082;
+    text-align: center;
 }
 
 .project-card p{
@@ -933,6 +959,15 @@ section.project-detail-section{
     flex: 1;
 }
 
+.card-text h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #4B0082;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
 .info-row{
     display: flex;
     justify-content: space-between;
@@ -1003,12 +1038,6 @@ section.project-detail-section{
 
 @media (max-width: 900px){
     .skills-grid{
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 900px){
-    .background-grid{
         grid-template-columns: 1fr;
     }
 }
