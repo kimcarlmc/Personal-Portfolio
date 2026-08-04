@@ -9,6 +9,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    transform-origin: center;
+}
+
 html{
     height: 100%;
     font-size: 75%;
@@ -65,6 +71,18 @@ header{
     color: #4B0082;
     cursor: pointer;
     z-index: 200;
+}
+
+.menu-toggle.is-open .icon-bars {
+    display: none;
+}
+
+.menu-toggle.is-open .icon-xmark {
+    display: inline-block;
+}
+
+.icon-xmark {
+    display: none;
 }
 
 nav a{
@@ -298,7 +316,9 @@ section{
 
 .home-content .btn{
     font-family: 'Montserrat', sans-serif;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-top: 0;
     padding: 0.75rem 1.5rem;
     background-color: #c8c8c8;
@@ -314,6 +334,10 @@ section{
     background-color: #4B0082;
     color: #c8c8c8;
     transform: scale(1.05);
+}
+
+.home-content .btn .icon{
+    transition: fill 0.4s ease;
 }
 
 .background-page{

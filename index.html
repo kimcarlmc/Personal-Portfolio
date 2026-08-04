@@ -60,7 +60,6 @@
     </script>
 
   <!-- Preconnect to external resources for performance optimization -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -68,126 +67,137 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print"
-    onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  </noscript>
-
   <link rel="icon" type="image/jpg" href="Images/favicon.jpg" />
   <link rel="stylesheet" href="style.css" />
   <link rel="canonical" href="https://kcmacapayad-portfolio.vercel.app/" />
 </head>
 
+<header class="home-header-animate" style="--delay: 0.05s">
+  <a href="index.html" class="logo home-header-animate" id="logo-initial" style="--delay: 0.1s">KC<span
+      id="logo-lastname">Macapayad</span></a>
+  <div class="menu-toggle home-header-animate" style="--delay: 0.15s">
+    <svg class="icon icon-bars" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor">
+      <path d="M3 5h18v3H3zm0 6h18v3H3zm0 6h18v3H3z" />
+    </svg>
+    <svg class="icon icon-xmark" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor"
+      stroke-width="2.5" stroke-linecap="round">
+      <path d="M5 5l14 14M19 5L5 19" />
+    </svg>
+  </div>
+
+  <nav>
+    <a href="index.html" class="activate home-header-animate" style="--delay: 0.2s">Home</a>
+    <a href="background.html" class="home-header-animate" style="--delay: 0.25s">Background</a>
+    <a href="project.html" class="home-header-animate" style="--delay: 0.3s">Projects</a>
+    <a href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/" class="social-icon home-header-animate"
+      style="--delay: 0.35s" target="_blank"><svg class="icon" viewBox="0 0 24 24" width="1em" height="1em"
+        fill="currentColor">
+        <path
+          d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM7 20.4H3.6V9H7v11.4z" />
+      </svg></a>
+    <a href="https://github.com/kimcarlmc" class="social-icon home-header-animate" style="--delay: 0.4s"
+      target="_blank"><svg class="icon" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor">
+        <path
+          d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.1 6.8 9.4.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1 .8-.2 1.6-.3 2.5-.3s1.7.1 2.5.3c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.7c0 .3.2.6.7.5C19.1 20.1 22 16.4 22 12c0-5.5-4.5-10-10-10z" />
+      </svg></i></a>
+  </nav>
+</header>
 <main>
-  <header class="home-header-animate" style="--delay: 0.05s">
-    <a href="index.html" class="logo home-header-animate" id="logo-initial" style="--delay: 0.1s">KC<span
-        id="logo-lastname">Macapayad</span></a>
-    <div class="menu-toggle home-header-animate" style="--delay: 0.15s">
-      <i class="fa-solid fa-bars"></i>
+  <section class="home">
+    <div class="home-img reveal-item" style="--delay: 0.1s">
+      <div class="image-card">
+        <img src="Images/main.webp" alt="Profile Picture of Kim Carl Macapayad - Personal Portfolio Homepage"
+          loading="lazy" />
+        <div class="image-overlay">
+          <span>About Me</span>
+          <p>
+            I'm a passionate Computer Engineer with a strong foundation in
+            software development and problem-solving. I enjoy creating
+            innovative solutions and continuously learning new technologies. I
+            love learning through hands-on experience and collaborating with
+            others to achieve common goals.
+          </p>
+        </div>
+      </div>
     </div>
-
-    <nav>
-      <a href="index.html" class="activate home-header-animate" style="--delay: 0.2s">Home</a>
-      <a href="background.html" class="home-header-animate" style="--delay: 0.25s">Background</a>
-      <a href="project.html" class="home-header-animate" style="--delay: 0.3s">Projects</a>
-      <a href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/" class="social-icon home-header-animate"
-        style="--delay: 0.35s" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/kimcarlmc" class="social-icon home-header-animate" style="--delay: 0.4s"
-        target="_blank"><i class="fa-brands fa-github"></i></a>
-    </nav>
-  </header>
-  <main>
-    <section class="home">
-      <div class="home-img reveal-item" style="--delay: 0.1s">
-        <div class="image-card">
-          <img src="Images/main.webp" alt="Profile Picture of Kim Carl Macapayad - Personal Portfolio Homepage"
-            loading="lazy" />
-          <div class="image-overlay">
-            <span>About Me</span>
-            <p>
-              I'm a passionate Computer Engineer with a strong foundation in
-              software development and problem-solving. I enjoy creating
-              innovative solutions and continuously learning new technologies. I
-              love learning through hands-on experience and collaborating with
-              others to achieve common goals.
-            </p>
-          </div>
-        </div>
+    <div class="home-content reveal-item" style="--delay: 0.25s">
+      <h3 class="reveal-item" style="--delay: 0.35s">
+        Hi, I'm <span>Kim Carl Macapayad</span>
+      </h3>
+      <h1 class="typing-text reveal-item" style="--delay: 0.45s">
+        Computer<span> Engineer</span>
+      </h1>
+      <div class="home-buttons reveal-item" style="--delay: 0.55s">
+        <a href="mailto:kimcarlmc@gmail.com" class="btn"><svg class="icon" viewBox="0 0 24 24" width="1em" height="1em"
+            fill="currentColor">
+            <path
+              d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.4l8 5.6 8-5.6V6H4zm16 2.4-7.4 5.2a1 1 0 0 1-1.2 0L4 8.4V18h16V8.4z" />
+          </svg>
+          kimcarlmc@gmail.com</a>
+        <a href="Files/KCMacapayad_Resume.pdf" class="btn" download><svg class="icon" viewBox="0 0 24 24" width="1em"
+            height="1em" fill="currentColor">
+            <path d="M12 3v10.2l3.6-3.6 1.4 1.4-6 6-6-6 1.4-1.4 3.6 3.6V3h2zM4 19h16v2H4z" />
+          </svg> Download
+          CV</a>
       </div>
-      <div class="home-content reveal-item" style="--delay: 0.25s">
-        <h3 class="reveal-item" style="--delay: 0.35s">
-          Hi, I'm <span>Kim Carl Macapayad</span>
-        </h3>
-        <h1 class="typing-text reveal-item" style="--delay: 0.45s">
-          Computer<span> Engineer</span>
-        </h1>
-        <div class="home-buttons reveal-item" style="--delay: 0.55s">
-          <a href="mailto:kimcarlmc@gmail.com" class="btn"><i class="fa-regular fa-envelope"></i>
-            kimcarlmc@gmail.com</a>
-          <a href="Files/KCMacapayad_Resume.pdf" class="btn" download><i class="fa-solid fa-download"></i> Download
-            CV</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav");
+    </div>
+  </section>
+</main>
+<script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("nav");
 
-    if (menuToggle && nav) {
-      menuToggle.addEventListener("click", () => {
-        nav.classList.toggle("show-menu");
-        const icon = menuToggle.querySelector("i");
-        icon.classList.toggle("fa-bars");
-        icon.classList.toggle("fa-xmark");
-      });
+  if (menuToggle && nav) {
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("show-menu");
+      menuToggle.classList.toggle("is-open");
+    });
 
-      nav.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () =>
-          nav.classList.remove("show-menu"),
-        );
-      });
-    }
-
-    const headerItems = document.querySelectorAll(".home-header-animate");
-    const alreadyAnimated =
-      sessionStorage.getItem("homeHeaderAnimated") === "true";
-
-    if (!alreadyAnimated) {
-      headerItems.forEach((item) => item.classList.add("is-animating"));
-
-      setTimeout(() => {
-        headerItems.forEach((item) => {
-          item.classList.remove("is-animating");
-          item.classList.add("is-visible");
-        });
-        sessionStorage.setItem("homeHeaderAnimated", "true");
-      }, 3200);
-    } else {
-      headerItems.forEach((item) => item.classList.add("is-visible"));
-    }
-
-    const revealItems = document.querySelectorAll(".reveal-item");
-
-    if ("IntersectionObserver" in window && revealItems.length) {
-      const observer = new IntersectionObserver(
-        (entries, obs) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("is-visible");
-              obs.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.15 },
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () =>
+        nav.classList.remove("show-menu"),
       );
+    });
+  }
 
-      revealItems.forEach((item) => observer.observe(item));
-    } else {
-      revealItems.forEach((item) => item.classList.add("is-visible"));
-    }
-  </script>
-  </body>
+  const headerItems = document.querySelectorAll(".home-header-animate");
+  const alreadyAnimated =
+    sessionStorage.getItem("homeHeaderAnimated") === "true";
+
+  if (!alreadyAnimated) {
+    headerItems.forEach((item) => item.classList.add("is-animating"));
+
+    setTimeout(() => {
+      headerItems.forEach((item) => {
+        item.classList.remove("is-animating");
+        item.classList.add("is-visible");
+      });
+      sessionStorage.setItem("homeHeaderAnimated", "true");
+    }, 3200);
+  } else {
+    headerItems.forEach((item) => item.classList.add("is-visible"));
+  }
+
+  const revealItems = document.querySelectorAll(".reveal-item");
+
+  if ("IntersectionObserver" in window && revealItems.length) {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 },
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+  }
+</script>
+</body>
 
 </html>
