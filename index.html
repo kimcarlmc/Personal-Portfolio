@@ -60,6 +60,8 @@
     </script>
 
   <link rel="icon" type="image/jpg" href="Images/favicon.jpg" />
+  <link rel="preload" href="Fonts/montserrat-v31-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="Fonts/montserrat-v31-latin-900.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css" />
   <link rel="canonical" href="https://kcmacapayad-portfolio.vercel.app/" />
 </head>
@@ -82,21 +84,21 @@
     <a href="background.html" class="home-header-animate" style="--delay: 0.25s">Background</a>
     <a href="project.html" class="home-header-animate" style="--delay: 0.3s">Projects</a>
     <a href="https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/" class="social-icon home-header-animate"
-      style="--delay: 0.35s" target="_blank"><svg class="icon" viewBox="0 0 24 24" width="1em" height="1em"
+      style="--delay: 0.3s" target="_blank"><svg class="icon" viewBox="0 0 24 24" width="1em" height="1em"
         fill="currentColor">
         <path
           d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM7 20.4H3.6V9H7v11.4z" />
       </svg></a>
-    <a href="https://github.com/kimcarlmc" class="social-icon home-header-animate" style="--delay: 0.4s"
+    <a href="https://github.com/kimcarlmc" class="social-icon home-header-animate" style="--delay: 0.3s"
       target="_blank"><svg class="icon" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor">
         <path
           d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.1 6.8 9.4.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1 .8-.2 1.6-.3 2.5-.3s1.7.1 2.5.3c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.7c0 .3.2.6.7.5C19.1 20.1 22 16.4 22 12c0-5.5-4.5-10-10-10z" />
-      </svg></i></a>
+      </svg></a>
   </nav>
 </header>
 <main>
   <section class="home">
-    <div class="home-img reveal-item" style="--delay: 0.1s">
+    <div class="home-img reveal-item" style="--delay: 0.4s">
       <div class="image-card">
         <img src="Images/main.webp" alt="Profile Picture of Kim Carl Macapayad - Personal Portfolio Homepage"
           loading="lazy" />
@@ -112,14 +114,14 @@
         </div>
       </div>
     </div>
-    <div class="home-content reveal-item" style="--delay: 0.25s">
-      <h3 class="reveal-item" style="--delay: 0.35s">
+    <div class="home-content reveal-item" style="--delay: 0.5s">
+      <h3 class="reveal-item" style="--delay: 0.5s">
         Hi, I'm <span>Kim Carl Macapayad</span>
       </h3>
-      <h1 class="typing-text reveal-item" style="--delay: 0.45s">
+      <h1 class="typing-text reveal-item" style="--delay: 0.6s">
         Computer<span> Engineer</span>
       </h1>
-      <div class="home-buttons reveal-item" style="--delay: 0.55s">
+      <div class="home-buttons reveal-item" style="--delay: 0.7s">
         <a href="mailto:kimcarlmc@gmail.com" class="btn"><svg class="icon" viewBox="0 0 24 24" width="1em" height="1em"
             fill="currentColor">
             <path
@@ -165,7 +167,7 @@
         item.classList.add("is-visible");
       });
       sessionStorage.setItem("homeHeaderAnimated", "true");
-    }, 3200);
+    }, 1000);
   } else {
     headerItems.forEach((item) => item.classList.add("is-visible"));
   }
