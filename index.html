@@ -79,7 +79,7 @@
   <link rel="canonical" href="https://kcmacapayad-portfolio.vercel.app/" />
 </head>
 
-<body>
+<main>
   <header class="home-header-animate" style="--delay: 0.05s">
     <a href="index.html" class="logo home-header-animate" id="logo-initial" style="--delay: 0.1s">KC<span
         id="logo-lastname">Macapayad</span></a>
@@ -97,36 +97,40 @@
         target="_blank"><i class="fa-brands fa-github"></i></a>
     </nav>
   </header>
-  <section class="home">
-    <div class="home-img reveal-item" style="--delay: 0.1s">
-      <div class="image-card">
-        <img src="Images/main.webp" alt="Profile Picture of Kim Carl Macapayad - Personal Portfolio Homepage"
-          loading="lazy" />
-        <div class="image-overlay">
-          <span>About Me</span>
-          <p>
-            I'm a passionate Computer Engineer with a strong foundation in
-            software development and problem-solving. I enjoy creating
-            innovative solutions and continuously learning new technologies. I
-            love learning through hands-on experience and collaborating with
-            others to achieve common goals.
-          </p>
+  <main>
+    <section class="home">
+      <div class="home-img reveal-item" style="--delay: 0.1s">
+        <div class="image-card">
+          <img src="Images/main.webp" alt="Profile Picture of Kim Carl Macapayad - Personal Portfolio Homepage"
+            loading="lazy" />
+          <div class="image-overlay">
+            <span>About Me</span>
+            <p>
+              I'm a passionate Computer Engineer with a strong foundation in
+              software development and problem-solving. I enjoy creating
+              innovative solutions and continuously learning new technologies. I
+              love learning through hands-on experience and collaborating with
+              others to achieve common goals.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="home-content reveal-item" style="--delay: 0.25s">
-      <h3 class="reveal-item" style="--delay: 0.35s">
-        Hi, I'm <span>Kim Carl Macapayad</span>
-      </h3>
-      <h1 class="typing-text reveal-item" style="--delay: 0.45s">
-        Computer<span> Engineer</span>
-      </h1>
-      <div class="home-buttons reveal-item" style="--delay: 0.55s">
-        <a href="mailto:kimcarlmc@gmail.com" class="btn"><i class="fa-regular fa-envelope"></i> kimcarlmc@gmail.com</a>
-        <a href="Files/KCMacapayad_Resume.pdf" class="btn" download><i class="fa-solid fa-download"></i> Download CV</a>
+      <div class="home-content reveal-item" style="--delay: 0.25s">
+        <h3 class="reveal-item" style="--delay: 0.35s">
+          Hi, I'm <span>Kim Carl Macapayad</span>
+        </h3>
+        <h1 class="typing-text reveal-item" style="--delay: 0.45s">
+          Computer<span> Engineer</span>
+        </h1>
+        <div class="home-buttons reveal-item" style="--delay: 0.55s">
+          <a href="mailto:kimcarlmc@gmail.com" class="btn"><i class="fa-regular fa-envelope"></i>
+            kimcarlmc@gmail.com</a>
+          <a href="Files/KCMacapayad_Resume.pdf" class="btn" download><i class="fa-solid fa-download"></i> Download
+            CV</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
   <script>
     const menuToggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector("nav");
@@ -184,6 +188,6 @@
       revealItems.forEach((item) => item.classList.add("is-visible"));
     }
   </script>
-</body>
+  </body>
 
 </html>
