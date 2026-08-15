@@ -2,15 +2,29 @@
 
 ![Portfolio Home Screenshot](Images/portfolio-home.png)
 
-Welcome to my personal portfolio website! This project showcases my educational background, professional experience, technical skills, and career journey as a Computer Engineer.
+Welcome to my personal portfolio website! This project showcases my SEO expertise, front-end development skills, educational background, and professional experience as a Computer Engineering graduate specializing in SEO.
 
-Live Website: https://kcmacapayad-portfolio.vercel.app
+**Live Website:** https://kcmacapayad-portfolio.vercel.app
 
 ---
 
 ## About
 
-This portfolio serves as my online professional profile, providing visitors with an overview of my qualifications, experiences, and skills. It was developed to establish a strong online presence and to showcase my growth in the field of Computer Engineering.
+This portfolio serves as my online professional profile, providing visitors with an overview of my qualifications, experience, and skills in SEO and front-end web development. It was built and optimized from the ground up as a real-world SEO case study — not just a showcase, but a working example of on-page and technical SEO applied to my own site.
+
+---
+
+## SEO Implementation
+
+This site isn't just described as SEO-focused — it's built to demonstrate it. Implementation includes:
+
+- `sitemap.xml` submitted to Google Search Console
+- Canonical tags on all pages
+- Open Graph and Twitter Card metadata for rich social sharing
+- Descriptive, unique page titles and meta descriptions per page
+- GA4 analytics integration
+- Image and performance optimization
+- Semantic HTML structure for crawlability and accessibility
 
 ---
 
@@ -21,7 +35,7 @@ This portfolio serves as my online professional profile, providing visitors with
 - Educational background section
 - Work experience overview
 - Technical and soft skills showcase
-- Projects section (currently under development)
+- Featured projects section
 - Quick access to GitHub and LinkedIn profiles
 - Mobile-friendly design
 
@@ -33,7 +47,7 @@ This portfolio serves as my online professional profile, providing visitors with
 
 ![Portfolio About Screenshot](Images/portfolio-about.png)
 
-The landing page containing a brief introduction and overview of my professional profile.
+The landing page containing a brief introduction and overview of my professional profile as an SEO specialist with a front-end development background.
 
 ### Background
 
@@ -45,16 +59,16 @@ A dedicated section that includes:
 Details about my academic journey and achievements in Computer Engineering.
 
 #### Work Experience
-Information about internships.
+Information about my internship at iBuild.PH Web Services and Solutions, where I gained hands-on SEO and Drupal CMS experience.
 
 #### Skills
-A showcase of both technical and soft skills.
 
 **Technical Skills**
-- Programming
-- Web Development
-- Software Tools
-- Other engineering and technology-related competencies
+- SEO (technical & on-page)
+- HTML, CSS, JavaScript
+- Git & GitHub
+- Drupal
+- Responsive Web Design
 
 **Soft Skills**
 - Communication
@@ -64,11 +78,14 @@ A showcase of both technical and soft skills.
 - Time Management
 
 ### Projects
-A work-in-progress section that will feature academic, personal, and professional projects.
+
+![Portfolio Projects Screenshot](Images/projects-menu.png)
+
+Featured academic, personal, and professional projects, including a thesis project, a Figma-to-code web layout build, and a front-end site remake.
 
 ### Social Links
-- GitHub Profile
-- LinkedIn Profile
+- [GitHub Profile](https://github.com/kimcarlmc)
+- [LinkedIn Profile](https://www.linkedin.com/in/kim-carl-u-macapayad-432185373/)
 
 ---
 
@@ -79,26 +96,22 @@ A work-in-progress section that will feature academic, personal, and professiona
 - JavaScript
 - Git & GitHub
 - Vercel
+- Google Search Console & GA4
 
 ---
 
 ## Project Status
 
-![Portfolio Projects Screenshot](Images/projects-menu.png)
-
-Showcases the projects that I have made.
-
-The portfolio is continuously being updated with new projects, experiences, and improvements.
+The portfolio is continuously being updated with new projects, experience, and improvements as I continue building my SEO specialization.
 
 ---
 
 ## Author
 
 **Kim Carl Macapayad**
-Computer Engineer
+SEO Specialist | Computer Engineer
 
-Portfolio:
-https://kcmacapayad-portfolio.vercel.app
+Portfolio: https://kcmacapayad-portfolio.vercel.app
 
 ---
 
